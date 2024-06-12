@@ -17,4 +17,14 @@ function printFavoriteMovies(movies) {
     }
 }
 printFavoriteMovies(favoriteMovies);
-// This function `printFavoriteMovies` takes an array of movies as input and then iterates over each movie in the array using a `for...of` loop, printing each one to the console.
+var myCar = {
+    make: "Toyota",
+    model: "Camry",
+    year: 2020
+};
+function printCarDetails(car) {
+    for (var key in car) {
+        console.log("".concat(key, ": ").concat(car[key]));
+    }
+}
+printCarDetails(myCar);
