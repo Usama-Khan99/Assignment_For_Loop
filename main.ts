@@ -48,3 +48,24 @@ function printCarDetails(car: Car): void {
 printCarDetails(myCar);
 
 
+// Write a function that uses a for loop to print the numbers from 1 to 100. 
+// However, for numbers divisible by 3, print "Fixx" instead of number, 
+// and for numbers divisible by 5 (and not 3), print "Buxx". 
+// For numbers divisible by both 3 and 5, print "FixxBuxx". 
+
+function printNumbers(): void {
+  for (let num = 1; num <= 100; num++) {
+      if (num % 3 === 0 && num % 5 === 0) {
+          console.log("FixxBuxx");
+      } else if (num % 3 === 0) {
+          console.log("Fixx");
+      } else if (num % 5 === 0) {
+          console.log("Buxx");
+      } else {
+          console.log(num);
+      }
+  }
+}
+
+// Call the function to print the numbers
+printNumbers();
